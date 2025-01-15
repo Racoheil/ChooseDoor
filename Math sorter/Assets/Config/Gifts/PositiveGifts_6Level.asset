@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f120fc8c215c4033acb3ceb27dd28ec, type: 3}
+  m_Name: PositiveGifts_6Level
+  m_EditorClassIdentifier: 
+  _graphics:
+  - {fileID: 21300000, guid: 2de8d8dd8228bba49a6de33b8a982842, type: 3}
+  - {fileID: 21300000, guid: 7d4d4121848950e429fc6e586e9239c3, type: 3}
+  - {fileID: 21300000, guid: f3786dd8dea02224cb6cbcbcd56fb834, type: 3}
+  - {fileID: 21300000, guid: ee8b8cdc36a6963468897ebb45eb4d43, type: 3}
+  - {fileID: 21300000, guid: 57d42075fd7ee464cbd4804687cd7d2f, type: 3}
