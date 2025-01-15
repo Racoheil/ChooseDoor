@@ -57,7 +57,7 @@ public class LevelButton : MonoBehaviour
     {
         if (isOpenState)
         {
-            AnalyticsService.Instance.SendLevelStartEvent(_indexOfLevel);
+            //AnalyticsService.Instance.SendLevelStartEvent(_indexOfLevel);
             StartCoroutine(SelectLevelRoutine());
         }
     }

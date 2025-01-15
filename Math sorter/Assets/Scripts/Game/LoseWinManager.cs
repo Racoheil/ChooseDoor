@@ -39,7 +39,7 @@ public class LoseWinManager : MonoBehaviour
     public void DoOnWin()
     {
         var levelIndex=FindObjectOfType<LevelsManager>().CurrentLevelIndex;
-        AnalyticsService.Instance.SendLevelCompleteEvent(levelIndex);
+        //AnalyticsService.Instance.SendLevelCompleteEvent(levelIndex);
         LoadCollectedGifts();
         _loseObjects.gameObject.SetActive(false);
         _prefsSaveService.SaveCompletedLevel(DataHolder.GetSelectedLevel());
@@ -48,7 +48,7 @@ public class LoseWinManager : MonoBehaviour
     public void DoOnLose()
     {
         var levelIndex=FindObjectOfType<LevelsManager>().CurrentLevelIndex;
-        AnalyticsService.Instance.SendLevelFailedeEvent(levelIndex);
+        //AnalyticsService.Instance.SendLevelFailedeEvent(levelIndex);
         _winObjects.gameObject.SetActive(false);
         ShowLoseObjects();
     }
