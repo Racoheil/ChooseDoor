@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using YG;
 
 public class LevelButton : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class LevelButton : MonoBehaviour
 
     public void Awake()
     {
+        numberOfLevelText.enableAutoSizing = true; 
         numberOfLevel = this.transform.GetSiblingIndex()+1;
         _indexOfLevel = transform.GetSiblingIndex();
         button = GetComponent<Button>();
@@ -48,8 +50,15 @@ public class LevelButton : MonoBehaviour
     
     public void SetNumberOfLevel()
     {
-
-        numberOfLevelText.text = "Level " + numberOfLevel.ToString();
+        if(YandexGame.EnvironmentData.language == "ru")
+        {
+            numberOfLevelText.text = "Уровень " + numberOfLevel.ToString();
+        }
+        else
+        {
+            numberOfLevelText.text = "Level " + numberOfLevel.ToString();
+        }
+        
     }
 
 
