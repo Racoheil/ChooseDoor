@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using YG;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class MainMenuManager : MonoBehaviour
         _prefsSaveService = new PrefsSaveService();
         SetCountOfGifts();
 
+    }
+    private void Start()
+    {
+        YandexGame.FullscreenShow();
     }
     public void GoToCollection()
     {

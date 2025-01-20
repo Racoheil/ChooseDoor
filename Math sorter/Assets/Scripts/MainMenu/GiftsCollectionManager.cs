@@ -49,7 +49,7 @@ public class GiftsCollectionManager : MonoBehaviour
         bool[] giftsStates = _prefsSaveService.LoadCollectedGifts();
         foreach(bool val  in giftsStates)
         {
-            Debug.Log(val);
+            //Debug.Log(val);
         }
         for (int j = 0;j< _positiveGiftsItems.Length;j++)
         {
@@ -58,7 +58,7 @@ public class GiftsCollectionManager : MonoBehaviour
                 int addingValue = _positiveGiftsItems[j].Graphics.Count;
                 int multiplyValue = j;
                 int giftId = (addingValue*multiplyValue)+i;
-                Debug.Log("GiftID of giftHolder = " + giftId);
+                //Debug.Log("GiftID of giftHolder = " + giftId);
                
                 
                 

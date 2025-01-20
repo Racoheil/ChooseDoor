@@ -137,7 +137,10 @@ public class GiftHolderManager : MonoBehaviour
         _damagePicture.DeactivateDamagePicture();
         _giftHolder.DeActivateObject();
         yield return new WaitForSeconds(0.45f);
-        EventService.CallOnNextQuestionRun();
+        if (HealthSystemService.Instance.IsDead == false)
+        {
+            EventService.CallOnNextQuestionRun();
+        }  
     }
 
     public void SaveAllColelctedGifts()

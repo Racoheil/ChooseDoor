@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthSystemService : MonoBehaviour
+public class HealthSystemService : Singleton<HealthSystemService>
 {
    [SerializeField] private int _health;
 
@@ -12,10 +12,14 @@ public class HealthSystemService : MonoBehaviour
     
    [SerializeField] private HeartsPanel _heartsPanel;
 
-    private void Awake()
+    public bool IsDead;
+
+    protected override void Awake()
     {
+        base.Awake();
         _health = _maxHealth;
         ResetHealth();
+        IsDead = false;
     }
 
     private void OnEnable()
@@ -38,6 +42,7 @@ public class HealthSystemService : MonoBehaviour
         if (_health==_minHealth)
         {
             StartCoroutine(DeathRoutine());
+            IsDead = true;
         }
         ReduceHealth();
         Debug.Log("Health : " + _health);
