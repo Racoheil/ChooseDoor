@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9901d414d858f68418eb497868e98827, type: 3}
   m_Name: Example3
   m_EditorClassIdentifier: 
-  _example: 2 * 10 + 30 = ?
-  _rightAnswer: 50
+  _example: "2 \xD7 5 = ?"
+  _rightAnswer: 10
   _wrongAnswers:
-  - 80
-  - 35
+  - 11
+  - 50

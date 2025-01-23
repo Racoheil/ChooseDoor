@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9901d414d858f68418eb497868e98827, type: 3}
   m_Name: Example4
   m_EditorClassIdentifier: 
-  _example: 1.2 - 0.2 = ?
-  _rightAnswer: 1
+  _example: "9 \xD7 4 \u2212 30 = ?"
+  _rightAnswer: 36
   _wrongAnswers:
-  - 0.8
-  - -8
+  - 45
+  - 27

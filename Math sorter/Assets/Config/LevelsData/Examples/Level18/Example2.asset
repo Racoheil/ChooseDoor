@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9901d414d858f68418eb497868e98827, type: 3}
   m_Name: Example2
   m_EditorClassIdentifier: 
-  _example: 2 + 0.2 = = ?
+  _example: "11 \xD7 3 \u2212 25 = ?"
   _rightAnswer: 2.2
   _wrongAnswers:
   - 22

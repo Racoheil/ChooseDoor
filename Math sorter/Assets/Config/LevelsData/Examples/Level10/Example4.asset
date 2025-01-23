@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9901d414d858f68418eb497868e98827, type: 3}
   m_Name: Example4
   m_EditorClassIdentifier: 
-  _example: 2 * 9 = ?
-  _rightAnswer: 18
+  _example: 25 + 25 = ?
+  _rightAnswer: 50
   _wrongAnswers:
-  - 29
-  - 2
+  - 100
+  - 0
