@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PositiveGifts_12Level
   m_EditorClassIdentifier: 
   _graphics:
-  - {fileID: 21300000, guid: 09a28344316f19441bd1100d079fdbc9, type: 3}
-  - {fileID: 21300000, guid: 4ebe10b2fcf614a448e95c2f09942e7f, type: 3}
-  - {fileID: 21300000, guid: 21cefde5ac266eb4db31ba3cfd1a4c66, type: 3}
-  - {fileID: 21300000, guid: 48a0b7776b649a947aab8b7d8df845fe, type: 3}
-  - {fileID: 21300000, guid: e19678a81dd294140873939ea31d983d, type: 3}
+  - {fileID: 21300000, guid: 16912a64e2265284c9e44bf0318174ac, type: 3}
+  - {fileID: 21300000, guid: fc3f8fc853e04aa49b6446f4f5ffe7cf, type: 3}
+  - {fileID: 21300000, guid: 17761b8dcaeac5e4fb9938bc304f9156, type: 3}
+  - {fileID: 21300000, guid: 036d2e535d8e9cb4fb19d59a57100224, type: 3}
+  - {fileID: 21300000, guid: 8162d2fb9f465914489617ee159ba2e9, type: 3}
