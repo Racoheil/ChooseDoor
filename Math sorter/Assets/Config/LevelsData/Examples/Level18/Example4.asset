@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Example4
   m_EditorClassIdentifier: 
   _example: "9 \xD7 4 \u2212 30 = ?"
-  _rightAnswer: 36
+  _rightAnswer: 6
   _wrongAnswers:
-  - 45
+  - 36
   - 27
