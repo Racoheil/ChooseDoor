@@ -10,6 +10,8 @@ public class PrefsSaveService : ISaveService
    public bool[] _giftsStates;
 
    public int[] _levelStates;
+
+   private bool _musicState;
    private enum LevelState { Closed = 0, Open = 1, Completed = 2 }
 
    private int _allGiftsCount = 100;
@@ -20,11 +22,10 @@ public class PrefsSaveService : ISaveService
 
    private static string _levelsStatesKey = "LevelsStatesArray";
     
-   private void Awake()
-   {
+    private void Awake()
+    {
         _giftsStates = new bool[_allGiftsCount];
-   }
-
+    }
     public int GetAllGiftsCount()
     {
 

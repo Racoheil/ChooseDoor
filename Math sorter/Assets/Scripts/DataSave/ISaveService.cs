@@ -21,4 +21,5 @@ public interface ISaveService
     public string GetLevelsStatesArrayKey();
 
     public void SaveLevelsStates(int[] levelsStatesInt);
+
 }
