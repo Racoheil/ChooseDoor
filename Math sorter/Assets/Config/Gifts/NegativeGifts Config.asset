@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NegativeGifts Config
   m_EditorClassIdentifier: 
   _graphics:
-  - {fileID: 21300000, guid: 3e9a2a20194518144931ea7377df1d1b, type: 3}
+  - {fileID: 21300000, guid: d9701e318919a374492bcef3f3334172, type: 3}
