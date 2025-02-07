@@ -27,7 +27,7 @@ public class MainMenuManager : MonoBehaviour
     }
     private void Start()
     {
-        YandexGame.FullscreenShow();
+        //YandexGame.FullscreenShow();
     }
     public void GoToCollection()
     {
