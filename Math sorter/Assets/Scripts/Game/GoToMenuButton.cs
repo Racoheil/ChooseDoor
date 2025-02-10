@@ -14,7 +14,7 @@ public class GoToMenuButton : MonoBehaviour
     IEnumerator GoToMenuRoutine()
     {
         EventService.CallOnGoToMenu();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.0f);
         YandexGame.FullscreenShow();
 
         
