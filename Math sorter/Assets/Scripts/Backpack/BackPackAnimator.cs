@@ -15,6 +15,7 @@ public class BackPackAnimator : MonoBehaviour
 
     private Quaternion _flapCloseRotation;
 
+    [SerializeField] Animator _animController;
     private void Awake()
     {
         _openBackpackFlap.gameObject.SetActive(false);
@@ -34,14 +35,16 @@ public class BackPackAnimator : MonoBehaviour
 
     private void OpenBackPack(float animationTime)
     {
-        _flapClosePosition = _backpackFlap.transform.position;
-        _flapCloseRotation = _backpackFlap.transform.rotation;
-        StartCoroutine(BackpackOpenAnimationRoutine(animationTime));
+        //_flapClosePosition = _backpackFlap.transform.position;
+        //_flapCloseRotation = _backpackFlap.transform.rotation;
+        //StartCoroutine(BackpackOpenAnimationRoutine(animationTime));
+        _animController.Play("openAnim");
     }
 
     private void CloseBackPack(float animationTime)
     {
-        StartCoroutine(BackpackCloseAnimationRoutine(animationTime));
+        //StartCoroutine(BackpackCloseAnimationRoutine(animationTime));
+        _animController.Play("closeAnim");
     }
 
     IEnumerator BackpackOpenAnimationRoutine(float animationTime)
@@ -53,6 +56,7 @@ public class BackPackAnimator : MonoBehaviour
 
     IEnumerator BackpackCloseAnimationRoutine(float animationTime)
     {
+
         _backpackFlap.transform.DOMove(_flapClosePosition, animationTime);
         _backpackFlap.transform.DORotateQuaternion(_flapCloseRotation, animationTime);
         yield return new WaitForSeconds(0);
